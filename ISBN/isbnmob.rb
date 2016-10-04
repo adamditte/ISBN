@@ -1,8 +1,6 @@
 def valid_isbn?(isbn)
-	if isbn.length == 10
-		true
-	else
-		false
-	end
+	isbn.gsub!(" ", "")
+	isbn.gsub!("-", "") #this strips the whitespace and redefines isbn using the !
+	isbn.length == 10 #same as doing if else statement
 
 end
