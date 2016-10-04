@@ -17,7 +17,7 @@ end
 
 def isbncheck10(number)
 
-	number = number.gsub(/[^0-9A-X]/i, "") #This removes the dash and space from the string
+	number = number.gsub(/[^0-9, ^x, .]/i, "") #This removes the dash and space from the string
 
 	array10 = number.split(//,)
 
