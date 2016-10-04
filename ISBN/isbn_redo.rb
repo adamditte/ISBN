@@ -17,11 +17,11 @@ end
 
 def isbncheck10(number)
 
-	number = number.gsub(/[^0-9, ^x, .]/i, "") #This removes the dash and space from the string
+	number = number.gsub(/[^0-9a-x, .]/i, "") #This removes the dash and space from the string
 
 	array10 = number.split(//,)
 
-	if array10[9] == "X"
+	if array10[9] == "x"
 		
 		array10[9] = "10"
 	end
@@ -78,7 +78,6 @@ def isbncheck13(number)
 
 		if index % 2 == 0
 			sum += value * 1
-
 		else
 			sum += value * 3
 
