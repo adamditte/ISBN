@@ -27,12 +27,40 @@ def valid_isbn_ten_check_sum?(isbn)
 		checksum = "X"
 	end
 	checksum_string = checksum.to_s
+	
 	if checksum_string == isbn[-1].upcase
 		true
 	else
 		false
 	end
 end
+
+def valid_isbn_13_length?(isbn)
+	isbn.length == 13
+end
+
+def valid_isbn_13_checksum?(isbn)
+	sum = 0
+	thirteen_digit_array = isbn.chars.map!(&:to_i)
+	thirteen_digit_array.each_with_index do |value, index|
+		break if index == 12
+		if index % 2 == 0
+			sum += value * 1
+		else
+			sum += value * 3
+		end
+	end
+	pre_checksum = sum % 10
+	checksum = 10 - pre_checksum
+	end_checksum = checksum % 10
+	end_checksum_string = end_checksum.to_s
+		if end_checksum_string == isbn[-1]
+			true
+		else
+			false
+		end
+	end
+	
 
 	# if ten_digit_array.last == 7
 	# 	true
