@@ -68,7 +68,17 @@ post '/change' do
 	erb :change_returned, :locals => {:name => name, :stuff => stuff, :input_amount_to_be_reduced => input_amount_to_be_reduced }
 end
 
+get '/contact' do 
+	erb :contact
+end
 
+get '/about' do
+	erb :about
+end
+
+get '/fun' do
+	erb :fun
+end
 
 
 
