@@ -40,7 +40,6 @@ def isbncheck10(number)
 	checksum10 = sum10 % 11
 
 	if checksum10 == array10[9]
-
 		true
 	else
 		false

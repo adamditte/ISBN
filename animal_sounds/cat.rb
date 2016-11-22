@@ -5,4 +5,8 @@ class Cat
 		@name = name
 		@sound = "meow"
 	end
+
+	def animal_says()
+		"#{name} says #{sound}"
+	end
 end

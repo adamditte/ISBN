@@ -1,8 +1,21 @@
+<p class = "somecolor">
 What is your name?
-<form method="post" action="/name">
+</p>
+<form method="post" action="/name" name ="name_form" class="form_box" onsubmit="return validateForm('name_form', 'input_name')">
 
 	<input type="text" name="input_name">
 
 	<input type="submit">
 
 </form>
+
+<!-- <script type="text/javascript">
+
+function validateForm(form,box) {
+  var value = document.forms[form][box].value;
+   if (value.length < 3) {
+       document.getElementById("error").innerHTML = "Try Again but this time enter your name!";
+       return false;
+   }
+} 								
+</script> -->
