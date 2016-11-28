@@ -22,7 +22,7 @@ p {
 
 /* Start of header css - Tic Tac Toe Game */
 .header-container {
-  background-color: seagreen;
+  background-color: hotpink;
 }
 
 #header {
@@ -34,7 +34,7 @@ p {
 
 #header > a {
   position: relative;
-  color: white;
+  color: purple;
   text-decoration: none;
 }
 
@@ -93,12 +93,12 @@ p {
 
 /* Color of X placed on board and Player One */
 input[value="X"] {
-  color: #ff745c;
+  color: blue;
 }
 
 /* Color of O placed on board and Player Two */
 input[value="O"] {
-  color: #38aac5;
+  color: purple;
 }
 
 /* Forms for Home, Opponent page */

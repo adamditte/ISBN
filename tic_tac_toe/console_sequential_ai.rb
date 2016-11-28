@@ -1,5 +1,5 @@
 class SequentialAI
-    attr_reader :marker
+    attr_accessor :marker
 
     def initialize(marker)
         @marker = marker
@@ -21,4 +21,4 @@ class SequentialAI
         # board.index("")
     end
  
-    end
+end
