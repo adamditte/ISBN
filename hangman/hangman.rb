@@ -11,6 +11,10 @@ class Hangman
     end
 
     def used_letters?(choice)
-		@already_guessed.include? choice 
+		@used_letters.include? choice 
+    end
+
+    def update_letters(choice)
+		@used_letters << choice
     end
 end
