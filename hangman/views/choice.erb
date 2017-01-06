@@ -1,0 +1,12 @@
+<center><h1>WORD GUESS</h1></center>
+<br>
+<h1>Chances Left:<%=chances_left%><div align="right"><u>Guessed Letters</div></u></h1>   
+<h2><div align="right"><%=show_guessed_letters%></div></h2><h1><div align="center"><%=show_board%></div></h1>
+<br>
+<br>
+<center><h3>Now, the rest of you paint-tasters, guess a letter that you believe is in <%=player_name%>'s word.<h3>
+<h3>When you guess incorrectly, you will lose a chance. The game ends when the word is complete, or all chances are lost</h3>
+<form method="post" action="choice">
+	<input type="text" name="choice" pattern="[A-Za-z]" maxlength="1" autofocus="autofocus" required>
+	<input type="submit">
+</form></center>
