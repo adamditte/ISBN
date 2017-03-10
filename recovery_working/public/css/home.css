@@ -1,0 +1,60 @@
+
+body {
+	background-image: url('/img/tree.jpg');
+	max-width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+footer {
+	color: white;
+	text-align: center;
+	padding-top: 18rem;
+	font-weight: bold;
+	
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 4rem;
+	font-style: italic;
+	font-family: Georgia, Serif;
+
+	}
+
+h3 {
+	color: white;
+	padding-top: 2.25rem;
+}
+
+p#about{
+	padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+#about {
+	color: white;
+	font-size: 1.4rem;
+	font-style: italic;
+	font-family: Georgia, Serif;
+	font-weight: bold;
+}
+
+#insureance_company{
+	overflow:hidden;
+   width:25%;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 9px 9px 9px 9px;
+   border-radius: 9px 9px 9px 9px;
+   background: #ffffff no-repeat scroll 319px center;
+}
+
+#show_results {
+	color: white;
+	font-size: 0.5rem;
+	font-style: italic;
+	font-family: Georgia, Serif;
+	font-weight: bold;
+}

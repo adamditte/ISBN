@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    title=title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/css/kube.min.css')
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/css/custom.min.css')
+    link(rel='shortcut icon', href='/img/favicon.png')
+    link(href='http://fonts.googleapis.com/css?family=Lato:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet', type='text/css')
+  body
+    .main-nav
+      .container
+        header.group.top-nav
+          nav.navbar.logo-w.navbar-left
+            a.logo(href='/') Recovery Expeditor
+          .navigation-toggle(data-tools='navigation-toggle', data-target='#navbar-1')
+            span.logo Expeditor
+          nav#navbar-1.navbar.item-nav.navbar-right
+            ul
+              li.active
+                a(href='/') Home
+              li
+                a(href='#') About
+              li
+                a(href='#') Archive
+              li
+                a(href='#') Contact
+    block content
+    
+    footer
+      .container
+        .units-row
+          .unit-50
+            ul.social.list-flat.right
+              li
+                a(href='mailto:afnizarhilmi@gmail.com')
+                  i.fa.fa-send
+              li
+                a(href='http://twitter.com/flamekaizar')
+                  i.fa.fa-twitter
+              li
+                a(href='http://dribbble.com/flamekaizar')
+                  i.fa.fa-dribbble
+              li
+                a(href='http://behance.com/flamekaizar')
+                  i.fa.fa-behance
+        p.text-centered.foot-cp
+          a(href='#') handcrafted by @minedminds
+    script(src='/js/jquery.min.js')
+    script(src='/js/kube.min.js')

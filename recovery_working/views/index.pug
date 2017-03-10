@@ -1,0 +1,29 @@
+extends theme-layout
+
+block content
+  .intro
+      .container
+        .units-row
+          .unit-10
+            img.img-intro(src='img/avatar.png', alt='')
+          .unit-90
+            p.p-intro This site is designed to help anyone who is taking a step towards recovery by making it easier for them to find a recovery center that accepts the insurance provider that they use.
+  div.content
+    div.container
+      h3 Please Select Your Insurance Provider
+      form(method='post')
+        select#insurance_company(name='insurance_company', value= selected_company)
+          option(value='Select') Select
+          each item in insurances
+            option(value=item.id, selected=(item.id == selected_company))=item.name
+        input(type='submit', value='Submit')
+      if recovery_centers
+        div(style='background: #fff; padding: 10px; width: 400px; text-align: left; margin: 10px auto;') 
+          each rc in recovery_centers
+            p=rc.center_name
+            p=rc.center_phone
+            p=rc.center_location
+            p=rc.center_comments
+            br
+
+
